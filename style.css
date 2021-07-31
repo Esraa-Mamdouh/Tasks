@@ -1,0 +1,122 @@
+/*Start Global Rules*/
+/* Box sizing on all elements*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+/* same font for all elements*/
+body {
+    font-family: "Work Sans", sans-serif;
+    margin:0;
+}
+/* parent to fill full screen*/
+/*.parent{
+    background-color: #eee;
+} */
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    /*background-color: #999;*/
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Media queries- responsive */
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+/* Start Header */
+.header{
+  margin-bottom:100px;
+  margin-top:20px;
+}
+.header .container{
+
+}
+.header .container .autocomplete{
+  /* width:600px; */
+  position:relative;
+}
+.header .container .autocomplete input{
+  width:300px;
+}
+.search-options{
+  padding-right: 0;
+  margin: 0;
+  text-align: right;
+  background-color: paleturquoise;
+  padding:5px 15px 15px 10px;
+  border-radius: 10px;
+  position:relative;
+  z-index: 5;
+}
+.option{
+  display: block;
+  padding-top: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.current-focus{
+  background-color: rebeccapurple;
+}
+/* End Header */
+/* Start Navigation */
+.navigation{
+  background-color: midnightblue;
+  /* position:relative; */
+}
+.navigation .container{
+  display:flex;
+  align-items: center;
+  justify-content:start;
+  /* padding-left: 15px;
+    padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto; */
+} 
+.navigation .container p{
+  margin:0;
+  display:inline-block;
+  font-weight: bold;
+  color:white;
+}
+.categories{
+  padding-right: 0;
+  margin: 0;
+  text-align: right;
+}
+.category{
+  display: block;
+  padding: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  /* color: #000; */
+  float: right;
+}
+.category a{
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.category:hover a{
+  color:orchid;
+}
+
